@@ -2,7 +2,7 @@
 
 This is a Chrome extension that automates the extraction of key profile data from LinkedIn. It currently collects Country Code (CC), Region, and Company information for each LinkedIn profile, allowing you to control navigation through profiles with an intuitive interface.
 
-![image](https://github.com/user-attachments/assets/b171e8fe-1180-4737-a506-4e4e7bdaa0f5) 
+![image](https://github.com/user-attachments/assets/8126a8b5-e242-439b-b7a6-1714d68e6462) 
 
 ---
 
