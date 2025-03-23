@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "LinkedIn Scraper",
+    "version": "1.0",
+    "description": "Extracts CC, Region, and Company info from LinkedIn profiles and lets you control extraction via a popup and settings page.",
+    "permissions": [
+      "scripting",
+      "storage"
+    ],
+    "host_permissions": [
+      "https://www.linkedin.com/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_title": "LinkedIn Scraper"
+    },
+    "options_page": "options.html",
+    "content_scripts": [
+      {
+        "matches": [
+          "https://www.linkedin.com/in/*",
+          "https://www.linkedin.com/404*"
+        ],
+        "js": ["content_script.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
+  
