@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>LinkedIn Scraper</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <div>
+      <div id="entryDisplay">Entry 0 of 0</div>
+      <div id="entryPath" class="entry-path">No URL loaded</div>
+    </div>
+    <div class="header-buttons">
+      <button id="settingsBtn" title="Settings">⚙️</button>
+      <span id="statusText">Idle</span>
+    </div>
+  </div>
+  <div class="controls">
+    <button id="backBtn" class="arrow-btn" title="Previous">&#9664;</button>
+    <button id="startStopBtn" class="circle-btn" title="Start/Stop">
+      <span id="startStopIcon">▶️</span>
+    </button>
+    <button id="nextBtn" class="arrow-btn" title="Next">&#9654;</button>
+  </div>
+  <div class="data-display">
+    <div class="data-field">
+      <label>CC:</label>
+      <span id="ccField"></span>
+    </div>
+    <div class="data-field">
+      <label>Region:</label>
+      <span id="regionField"></span>
+    </div>
+    <div class="data-field">
+      <label>Company:</label>
+      <span id="companyField"></span>
+    </div>
+    <div id="jobProgressionMessage" class="job-progression"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

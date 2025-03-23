@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>LinkedIn Scraper Dashboard</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <h1>LinkedIn Scraper Dashboard</h1>
+    
+    <div class="import-section">
+      <input type="file" id="csvImport" accept=".csv">
+      <button id="importBtn">Import CSV</button>
+      <div id="importInfo" class="info-text"></div>
+    </div>
+    
+    <div class="textareas">
+      <div class="left">
+        <h2>Input URL Paths</h2>
+        <textarea id="urlInput" placeholder="/in/username/"></textarea>
+      </div>
+      <div class="right">
+        <h2 id="outputHeader">Output (0)</h2>
+        <textarea id="outputArea" placeholder="Scraped results will appear here" readonly></textarea>
+      </div>
+    </div>
+    
+    <div class="buttons">
+      <button id="saveBtn">Save</button>
+      <button id="copyBtn">Copy Output</button>
+      <button id="downloadBtn">Download Output</button>
+    </div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
